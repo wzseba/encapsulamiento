@@ -9,9 +9,15 @@ import ejercicio1.Nota;
 class TestNota {
 
 	@Test
-	void testNota() {
+	void aprobadoTest() {
 		Nota parcial = new Nota(4);
 		assertTrue(parcial.aprobado());
+	}
+
+	@Test
+	void desaprobadoTest() {
+		Nota parcial = new Nota(2);
+		assertTrue(parcial.desaprobado());
 	}
 
 }
